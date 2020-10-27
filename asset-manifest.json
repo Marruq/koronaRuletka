@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/koronaRuletka/home/static/css/main.41d9cb28.chunk.css",
-    "main.js": "/koronaRuletka/home/static/js/main.fea3ca19.chunk.js",
-    "main.js.map": "/koronaRuletka/home/static/js/main.fea3ca19.chunk.js.map",
-    "runtime-main.js": "/koronaRuletka/home/static/js/runtime-main.ac07cec6.js",
-    "runtime-main.js.map": "/koronaRuletka/home/static/js/runtime-main.ac07cec6.js.map",
-    "static/js/2.1c331fde.chunk.js": "/koronaRuletka/home/static/js/2.1c331fde.chunk.js",
-    "static/js/2.1c331fde.chunk.js.map": "/koronaRuletka/home/static/js/2.1c331fde.chunk.js.map",
-    "static/js/3.fdcc29a5.chunk.js": "/koronaRuletka/home/static/js/3.fdcc29a5.chunk.js",
-    "static/js/3.fdcc29a5.chunk.js.map": "/koronaRuletka/home/static/js/3.fdcc29a5.chunk.js.map",
-    "index.html": "/koronaRuletka/home/index.html",
-    "static/css/main.41d9cb28.chunk.css.map": "/koronaRuletka/home/static/css/main.41d9cb28.chunk.css.map",
-    "static/js/2.1c331fde.chunk.js.LICENSE.txt": "/koronaRuletka/home/static/js/2.1c331fde.chunk.js.LICENSE.txt"
+    "main.css": "/koronaRuletka/static/css/main.41d9cb28.chunk.css",
+    "main.js": "/koronaRuletka/static/js/main.fea3ca19.chunk.js",
+    "main.js.map": "/koronaRuletka/static/js/main.fea3ca19.chunk.js.map",
+    "runtime-main.js": "/koronaRuletka/static/js/runtime-main.be62624f.js",
+    "runtime-main.js.map": "/koronaRuletka/static/js/runtime-main.be62624f.js.map",
+    "static/js/2.1c331fde.chunk.js": "/koronaRuletka/static/js/2.1c331fde.chunk.js",
+    "static/js/2.1c331fde.chunk.js.map": "/koronaRuletka/static/js/2.1c331fde.chunk.js.map",
+    "static/js/3.fdcc29a5.chunk.js": "/koronaRuletka/static/js/3.fdcc29a5.chunk.js",
+    "static/js/3.fdcc29a5.chunk.js.map": "/koronaRuletka/static/js/3.fdcc29a5.chunk.js.map",
+    "index.html": "/koronaRuletka/index.html",
+    "static/css/main.41d9cb28.chunk.css.map": "/koronaRuletka/static/css/main.41d9cb28.chunk.css.map",
+    "static/js/2.1c331fde.chunk.js.LICENSE.txt": "/koronaRuletka/static/js/2.1c331fde.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac07cec6.js",
+    "static/js/runtime-main.be62624f.js",
     "static/js/2.1c331fde.chunk.js",
     "static/css/main.41d9cb28.chunk.css",
     "static/js/main.fea3ca19.chunk.js"
