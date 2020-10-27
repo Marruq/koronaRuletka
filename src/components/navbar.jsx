@@ -16,10 +16,7 @@ const Navbar = () => {
                 <div className="stick stick-2"></div>
                 <div className="stick stick-3"></div>
             </div>
-
-            <h2>
-                Korona Ruletka!
-            </h2>
+            <h2>Korona Ruletka!</h2>
         </nav>
     )
 }

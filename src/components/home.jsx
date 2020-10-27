@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import crown from "../images/crown.svg"
 
-const Sidebar = (props) => {
-    return (
-        <div className="sidebar" onClick={props.show} >
+const Home = () => {
+    return(
+        <div className="home">
+
+            <img src={crown} alt=""/>
             <ul>
-                <li><Link to="/koronaRuletka/home">Home</Link></li>
                 <li><Link to="/koronaRuletka/ruletka">Ruletka</Link></li>
                 <li><Link to="/koronaRuletka/twitter">Twitter</Link></li>
             </ul>
@@ -13,4 +15,4 @@ const Sidebar = (props) => {
     )
 }
 
-export default Sidebar
+export default Home

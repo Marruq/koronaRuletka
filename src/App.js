@@ -3,6 +3,8 @@ import './App.css';
 import TwitterFeed from "./components/twitterFeed";
 import Roulette from "./components/roulette";
 import Navbar from "./components/navbar";
+import Home from "./components/home";
+
 import {BrowserRouter, Route, Switch} from "react-router-dom"
 
 function App() {
@@ -11,8 +13,9 @@ function App() {
           <div className="App">
               <Navbar />
               <Switch>
-                  <Route path="/ruletka" exact component={Roulette} />
-                  <Route path="/twitter" exact component={TwitterFeed} />
+                  <Route path={["/koronaRuletka/","/koronaRuletka/home"]} exact component={Home} />
+                  <Route path="/koronaRuletka/ruletka" component={Roulette} />
+                  <Route path="/koronaRuletka/twitter" exact component={TwitterFeed} />
               </Switch>
           </div>
       </BrowserRouter>

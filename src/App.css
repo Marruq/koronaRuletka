@@ -16,14 +16,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .twitter {
   padding-top: 80px;
@@ -49,11 +42,20 @@ nav {
   transition: 2ms ease-in-out;
   color: white;
   z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sidebar li {
   list-style: none;
   padding: 40px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #282c34;
+  font-size: 1.5rem;
 }
 
 nav h2 {
@@ -90,21 +92,52 @@ nav .stick:last-child {
   margin-bottom: 0;
 }
 
+.home img {
+  padding-top: 110px;
+  transform: scale(1.2);
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.home ul {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.home li {
+  padding: 30px 0;
+}
+
+.home a {
+  color: #ffb142;
+  text-decoration: none;
+  font-size:2rem;
+}
+
 .roulette {
   box-sizing: border-box;
   align-self: center;
   width: 100%;
   margin: 0 auto;
-  padding: 200px 15px 0;
+  padding: 50px 15px 0;
+
 }
 
 .roulette h1 {
-  font-size: 3rem;
+  font-size: 1rem;
   margin: 60px 0;
 }
 
 .roulette input {
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -136,6 +169,7 @@ nav .stick:last-child {
   }
   .roulette {
     width:80%;
+    padding: 200px 15px 0;
   }
   .sidebar {
     width:300px;
