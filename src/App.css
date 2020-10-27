@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.twitter {
+  grid-column: 3;
+  align-self: center;
+}
+
+.roulette {
+  margin-top: 50px;
+  grid-column: 1/-2;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  align-self: center;
+}
+
+.roulette input {
+  font-size: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.roulette input:before {
+  content: 'min/max';
+  position: relative;
+  display:block;
+}
+
+.roulette button {
+  padding: 20px 50px;
+  background: #ffb142;
+  border-radius:10px;
+  outline: none;
+  border-color: transparent;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  color: white;
+  font-size:30px;
+}
