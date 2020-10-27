@@ -1,10 +1,6 @@
 import React from 'react'
 
-
-
-
 const TwitterFeed = () => {
-    console.log('render')
     return (
         <div className="twitter">
             <a className="twitter-timeline" data-lang="pl" data-width="500" data-height="600" data-theme="dark"

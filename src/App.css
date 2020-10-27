@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   color: white;
   font-size: calc(10px + 2vmin);
 }
@@ -22,22 +26,81 @@
 }
 
 .twitter {
-  grid-column: 1/-1;
-  grid-row: 2;
+  padding-top: 80px;
   align-self: center;
 }
 
-.roulette {
-  margin-top: 50px;
-  grid-column: 1/-1;
-  grid-row: 1;
-  box-sizing: border-box;
-  padding: 20px 15px;
+nav {
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: #282c34;
+  box-shadow: 0 1px 5px #00000066;
+}
+
+.sidebar {
+  height: 100vh;
+  background: #ffb142;
+  width:170px;
+  transition: 2ms ease-in-out;
+  color: white;
+  z-index: 4;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 40px 0;
+}
+
+nav h2 {
+  color: #ffb142;
+  margin: 0 auto;
   align-self: center;
+}
+
+nav .hamburger {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+nav .stick {
+  width: 40px;
+  height: 5px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  background-color: #ffb142;
+  display: inline-block;
+}
+
+nav .stick:last-child {
+  margin-bottom: 0;
+}
+
+.roulette {
+  box-sizing: border-box;
+  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 15px 0;
 }
 
 .roulette h1 {
   font-size: 3rem;
+  margin: 60px 0;
 }
 
 .roulette input {
@@ -69,12 +132,13 @@
 
 @media (min-width: 760px) {
   .twitter {
-    grid-column: 3;
-    grid-row: 1;
+   width:100%;
   }
   .roulette {
-    grid-column: 1/-2 ;
-    grid-row: 1;
+    width:80%;
+  }
+  .sidebar {
+    width:300px;
   }
 
 }

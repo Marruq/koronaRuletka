@@ -26,11 +26,6 @@ const Roulette = () => {
         setResult((Math.floor(Math.random() * (max - min + 1)) + min))
     }
 
-
-
-
-
-
     return (
         <div className="roulette">
            <h1>{result ? result : 'wpisz min, max i kliknij losuj :P'}</h1>
