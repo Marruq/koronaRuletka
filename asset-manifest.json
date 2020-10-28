@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/koronaRuletka/static/css/main.24014e3f.chunk.css",
-    "main.js": "/koronaRuletka/static/js/main.45664b11.chunk.js",
-    "main.js.map": "/koronaRuletka/static/js/main.45664b11.chunk.js.map",
+    "main.js": "/koronaRuletka/static/js/main.86c32a37.chunk.js",
+    "main.js.map": "/koronaRuletka/static/js/main.86c32a37.chunk.js.map",
     "runtime-main.js": "/koronaRuletka/static/js/runtime-main.be62624f.js",
     "runtime-main.js.map": "/koronaRuletka/static/js/runtime-main.be62624f.js.map",
-    "static/js/2.1c331fde.chunk.js": "/koronaRuletka/static/js/2.1c331fde.chunk.js",
-    "static/js/2.1c331fde.chunk.js.map": "/koronaRuletka/static/js/2.1c331fde.chunk.js.map",
+    "static/js/2.cc3019d0.chunk.js": "/koronaRuletka/static/js/2.cc3019d0.chunk.js",
+    "static/js/2.cc3019d0.chunk.js.map": "/koronaRuletka/static/js/2.cc3019d0.chunk.js.map",
     "static/js/3.fdcc29a5.chunk.js": "/koronaRuletka/static/js/3.fdcc29a5.chunk.js",
     "static/js/3.fdcc29a5.chunk.js.map": "/koronaRuletka/static/js/3.fdcc29a5.chunk.js.map",
     "index.html": "/koronaRuletka/index.html",
     "static/css/main.24014e3f.chunk.css.map": "/koronaRuletka/static/css/main.24014e3f.chunk.css.map",
-    "static/js/2.1c331fde.chunk.js.LICENSE.txt": "/koronaRuletka/static/js/2.1c331fde.chunk.js.LICENSE.txt",
+    "static/js/2.cc3019d0.chunk.js.LICENSE.txt": "/koronaRuletka/static/js/2.cc3019d0.chunk.js.LICENSE.txt",
     "static/media/crown.6f2706cb.svg": "/koronaRuletka/static/media/crown.6f2706cb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.be62624f.js",
-    "static/js/2.1c331fde.chunk.js",
+    "static/js/2.cc3019d0.chunk.js",
     "static/css/main.24014e3f.chunk.css",
-    "static/js/main.45664b11.chunk.js"
+    "static/js/main.86c32a37.chunk.js"
   ]
 }
