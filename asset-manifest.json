@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/koronaRuletka/static/css/main.8c047ee0.chunk.css",
-    "main.js": "/koronaRuletka/static/js/main.ae3546aa.chunk.js",
-    "main.js.map": "/koronaRuletka/static/js/main.ae3546aa.chunk.js.map",
+    "main.css": "/koronaRuletka/static/css/main.7f4c9b72.chunk.css",
+    "main.js": "/koronaRuletka/static/js/main.85529051.chunk.js",
+    "main.js.map": "/koronaRuletka/static/js/main.85529051.chunk.js.map",
     "runtime-main.js": "/koronaRuletka/static/js/runtime-main.be62624f.js",
     "runtime-main.js.map": "/koronaRuletka/static/js/runtime-main.be62624f.js.map",
     "static/js/2.5208cc56.chunk.js": "/koronaRuletka/static/js/2.5208cc56.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.fdcc29a5.chunk.js": "/koronaRuletka/static/js/3.fdcc29a5.chunk.js",
     "static/js/3.fdcc29a5.chunk.js.map": "/koronaRuletka/static/js/3.fdcc29a5.chunk.js.map",
     "index.html": "/koronaRuletka/index.html",
-    "static/css/main.8c047ee0.chunk.css.map": "/koronaRuletka/static/css/main.8c047ee0.chunk.css.map",
+    "static/css/main.7f4c9b72.chunk.css.map": "/koronaRuletka/static/css/main.7f4c9b72.chunk.css.map",
     "static/js/2.5208cc56.chunk.js.LICENSE.txt": "/koronaRuletka/static/js/2.5208cc56.chunk.js.LICENSE.txt",
     "static/media/crown.6f2706cb.svg": "/koronaRuletka/static/media/crown.6f2706cb.svg",
     "static/media/App.css": "/koronaRuletka/static/media/twitter.1df7c887.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.be62624f.js",
     "static/js/2.5208cc56.chunk.js",
-    "static/css/main.8c047ee0.chunk.css",
-    "static/js/main.ae3546aa.chunk.js"
+    "static/css/main.7f4c9b72.chunk.css",
+    "static/js/main.85529051.chunk.js"
   ]
 }
