@@ -23,6 +23,10 @@
   align-self: center;
 }
 
+.twitter h4 {
+  margin: 30px 0;
+}
+
 nav {
   height: 60px;
   width: 100%;
@@ -92,19 +96,23 @@ nav .stick:last-child {
   margin-bottom: 0;
 }
 
-.home img {
-  padding-top: 110px;
-  transform: scale(1.2);
-  animation: pulse 4s infinite;
-}
+/*.home img {*/
+/*  padding-top: 110px;*/
+/*  transform: scale(1.2);*/
+/*  animation: pulse 4s infinite;*/
+/*}*/
 
-@keyframes pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.2);
-  }
+/*@keyframes pulse {*/
+/*  from {*/
+/*    transform: scale(1);*/
+/*  }*/
+/*  to {*/
+/*    transform: scale(1.2);*/
+/*  }*/
+/*}*/
+
+.home {
+  padding-top:80px;
 }
 
 .home ul {
@@ -120,6 +128,51 @@ nav .stick:last-child {
   color: #ffb142;
   text-decoration: none;
   font-size:2rem;
+  display:flex;
+  border-radius:15px;
+  height: 100%;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.home .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home .card {
+  width:300px;
+  height: 150px;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+.home .card:hover {
+  transform: scale(1.1);
+}
+
+.home .card .tt {
+  background: url("images/twitter.png") no-repeat ;
+  background-size: cover;
+}
+
+.home .card .podkarpacie {
+  background: url("images/podkarpacie.png") no-repeat;
+  background-size: cover;
+}
+
+.home .card .ruletka {
+  background: url("images/ruletka.png") no-repeat;
+  background-size: cover;
+}
+
+.home .card img {
+  height: 100%;
+  width: 100%;
+  border-radius:15px;
 }
 
 .roulette {
@@ -132,7 +185,7 @@ nav .stick:last-child {
 }
 
 .roulette h1 {
-  font-size: 1rem;
+  font-size: 30px;
   margin: 60px 0;
 }
 
@@ -151,7 +204,7 @@ nav .stick:last-child {
 }
 
 .roulette button {
-  padding: 20px 50px;
+  padding: 10px 50px;
   background: #ffb142;
   border-radius:10px;
   outline: none;

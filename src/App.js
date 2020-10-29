@@ -4,21 +4,24 @@ import TwitterFeed from "./components/twitterFeed";
 import Roulette from "./components/roulette";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
+import Podkarpacie from "./components/podkarpacie";
 
-import {BrowserRouter, Route, Switch} from "react-router-dom"
+import {HashRouter, Route, Switch} from "react-router-dom"
+
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
           <div className="App">
               <Navbar />
               <Switch>
-                  <Route path={["/koronaRuletka/","/koronaRuletka/home"]} exact component={Home} />
-                  <Route path="/koronaRuletka/ruletka" component={Roulette} />
-                  <Route path="/koronaRuletka/twitter" exact component={TwitterFeed} />
+                  <Route path={["/","/home"]} exact component={Home} />
+                  <Route path="/ruletka" exact component={Roulette} />
+                  <Route path="/twitter" exact component={TwitterFeed} />
+                  <Route path="/podkarpacie" exact component={Podkarpacie} />
               </Switch>
           </div>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 

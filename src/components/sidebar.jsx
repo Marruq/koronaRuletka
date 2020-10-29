@@ -5,9 +5,10 @@ const Sidebar = (props) => {
     return (
         <div className="sidebar" onClick={props.show} >
             <ul>
-                <li><Link to="/koronaRuletka/home">Home</Link></li>
-                <li><Link to="/koronaRuletka/ruletka">Ruletka</Link></li>
-                <li><Link to="/koronaRuletka/twitter">Twitter</Link></li>
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/ruletka">Ruletka</Link></li>
+                <li><Link to="/twitter">Twitter</Link></li>
+                <li><Link to="/podkarpacie">Podkarpacie</Link></li>
             </ul>
         </div>
     )
