@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import TwitterFeed from "./components/twitterFeed";
-import Roulette from "./components/roulette";
+import Roulette from "./components/roulette/roulette";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Podkarpacie from "./components/podkarpacie";
