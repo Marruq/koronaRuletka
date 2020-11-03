@@ -3,7 +3,7 @@ import './App.css';
 import TwitterFeed from "./components/twitterFeed";
 import Roulette from "./components/roulette/roulette";
 import Navbar from "./components/navbar/navbar";
-import Home from "./components/home";
+import Home from "./components/home/home";
 import Podkarpacie from "./components/podkarpacie";
 
 import {HashRouter, Route, Switch} from "react-router-dom"
