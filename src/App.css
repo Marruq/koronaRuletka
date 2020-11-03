@@ -200,6 +200,7 @@ nav .stick:last-child {
   width: 50%;
 }
 
+
 .roulette input:before {
   content: 'min/max';
   position: relative;
