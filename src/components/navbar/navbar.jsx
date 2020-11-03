@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Sidebar from "./sidebar";
+import Sidebar from "../sidebar";
+import { Title } from "./styles"
 
 const Navbar = () => {
     const [ show, setShow ] = useState(false)
@@ -16,7 +17,7 @@ const Navbar = () => {
                 <div className="stick stick-2"></div>
                 <div className="stick stick-3"></div>
             </div>
-            <h2>Korona Ruletka!</h2>
+            <Title>Korona Ruletka!</Title>
         </nav>
     )
 }
