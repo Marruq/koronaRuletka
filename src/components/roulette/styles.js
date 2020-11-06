@@ -19,6 +19,7 @@ const resizeAnimation = keyframes`
 export const Score = styled.h1`
     font-size: ${props => props.result ? "60px" : "30px"};
     margin: 60px 0;
+    text-align: center;
     color: ${props => props.result ? "#ffb142" : "white"};
     
     ${props => props.result && css`

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
-const TwitterFeed = () => {
+const Podkarpacie = () => {
+
+
 
     useEffect(() => {
         const script = document.createElement("script");
@@ -10,11 +12,13 @@ const TwitterFeed = () => {
     },[])
 
     return (
-        <div className="twitter">
+        <div className="twitter pdk">
+            <h4>Nie dało się wyciągnąć jego odpowiedzi, to masz przynajmniej na niego namiar</h4>
+
             <a className="twitter-timeline" data-lang="pl" data-width="500" data-height="600" data-theme="dark"
-               href="https://twitter.com/MZ_GOV_PL?ref_src=twsrc%5Etfw">Tweets by MZ_GOV_PL</a>
+               href="https://twitter.com/McMarcel83?ref_src=twsrc%5Etfw">Tweety gościa od podkarpacia</a>
         </div>
     )
 }
 
-export default TwitterFeed
+export default Podkarpacie

@@ -1,5 +1,5 @@
 import styled  from 'styled-components'
-import { device } from '../device';
+import { device } from '../utilities/device';
 
 export const Nav = styled.nav`
     bottom:0;
@@ -40,11 +40,14 @@ export const List = styled.ul`
     a {
         display: flex;
         justify-content:center;
+        align-items: center;
         height: 5rem;
         color:#cc8e35;
         text-decoration:none;
         filter: grayscale(100%) opacity(0.7);
         transition: 600ms ease;
+        text-transform:uppercase;
+        font-weight:bold;
         &:hover {
             filter: grayscale(0%) opacity(1);
             background:#2f3542;
@@ -57,12 +60,16 @@ export const List = styled.ul`
     svg {
         min-width: 2rem;
         margin: 0 0.5rem;
+        height: 2rem;
     }
     .cls-1 {
         fill:#cc8e35;
     }
     .cls-2 {
         fill:#ffb142;
+    }
+    #ruletka-outer-2 .cls-2 {
+        fill:#282c34;
     } 
     .cls-1, .cls-2 {
         transition: 600ms ease;
@@ -70,7 +77,6 @@ export const List = styled.ul`
     @media ${device.tablet} {
         flex-direction:column;
         a {
-            align-items: center;
             justify-content:initial;
         }
         svg {

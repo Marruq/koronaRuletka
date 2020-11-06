@@ -25,17 +25,18 @@ const Roulette = () => {
     }
 
     return (
-        <div className="roulette">
-           <Score result={result} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
+        <main>
+            <div className="roulette">
+               <Score result={result} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
 
-            <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>
-            <input type="number" id="max" placeholder="max" onChange={ e => maxHandler(e)}/>
+                <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>
+                <input type="number" id="max" placeholder="max" onChange={ e => maxHandler(e)}/>
 
-            <button onClick={ () => {
-                roulette(min,max)
-            }}>LOSUJ</button>
-
-        </div>
+                <button onClick={ () => {
+                    roulette(min,max)
+                }}>LOSUJ</button>
+            </div>
+        </main>
     )
 }
 
