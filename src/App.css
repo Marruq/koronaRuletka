@@ -1,20 +1,39 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  background: #252525;
+  height: 100vh;
+}
+
+
+
 * {
   box-sizing: border-box;
   margin:0;
   padding:0;
 }
 
-.App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  color: white;
-  font-size: calc(10px + 2vmin);
+main {
+  margin-left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 768px) {
+  main {
+    margin-left:5rem;
+  }
 }
+
+/*.App {*/
+/*  text-align: center;*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  color: white;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*}*/
+
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
 
 
 
@@ -27,17 +46,17 @@
   margin: 30px 0;
 }
 
-nav {
-  height: 60px;
-  width: 100%;
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  background-color: #282c34;
-  box-shadow: 0 1px 5px #00000066;
-}
+/*nav {*/
+/*  height: 60px;*/
+/*  width: 100%;*/
+/*  z-index: 2;*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  display: flex;*/
+/*  background-color: #282c34;*/
+/*  box-shadow: 0 1px 5px #00000066;*/
+/*}*/
 
 .sidebar {
   height: 100vh;

@@ -5,7 +5,7 @@ import crown from "../../images/crown.svg"
 
 const Home = () => {
     return(
-        <div className="home">
+        <main className="home">
 
             <img src={crown} alt=""/>
             <div className="flex">
@@ -19,7 +19,7 @@ const Home = () => {
                     <Link className="podkarpacie" to="/podkarpacie">Podkarpacie</Link>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 
