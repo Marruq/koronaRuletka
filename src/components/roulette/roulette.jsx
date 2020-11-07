@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
-import { Score } from './styles'
+import { Score, InfoModal } from './styles'
 
 
 const Roulette = () => {
 
     const [ min, setMin ] = useState(null)
     const [ max, setMax ] = useState(null)
+    const [ copy, setCopy ] = useState(false)
 
     const [ result, setResult ] = useState('')
 
@@ -27,6 +28,10 @@ const Roulette = () => {
     const clipboardHandler = () => {
         if (result) {
             navigator.clipboard.writeText(result)
+            setCopy(true)
+            setTimeout(()=> {
+                setCopy(false)
+            },2300)
         } else {
             console.log('brak wyniku')
         }
@@ -34,7 +39,32 @@ const Roulette = () => {
 
     return (
         <main>
+
             <div className="roulette">
+                {copy &&
+                <InfoModal>
+                    <div>
+                        <span>
+                            <p>{result}</p>
+                            <h2>SKOPIOWANO!</h2>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <title>copy</title>
+                            <g id="paper-secondary">
+                                <path id="paper-black" className="cls-1"
+                                      d="M74.5,5H41.69A7.71,7.71,0,0,0,34,12.69V70.31A7.71,7.71,0,0,0,41.69,78H82.31A7.71,7.71,0,0,0,90,70.31V20Z"/>
+                            </g>
+                            <g id="paper-primary">
+                                <g id="paper-white">
+                                    <polygon className="cls-2" points="74.5 5 72 5 72 22 90 22 90 19.96 74.5 5"/>
+                                    <path className="cls-2"
+                                          d="M28,76.06V21H16.94A6,6,0,0,0,11,26.94V88.06A6,6,0,0,0,16.94,94H61.06A6,6,0,0,0,67,88.06V82H33.94A6,6,0,0,1,28,76.06Z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </InfoModal>
+                }
                <Score onClick={clipboardHandler} result={result} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
 
                 <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>

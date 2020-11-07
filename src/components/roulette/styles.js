@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components'
-
+import { device } from '../utilities/device'
 
 const resizeAnimation = keyframes`
     0% {
@@ -27,4 +27,59 @@ export const Score = styled.h1`
     animation: ${resizeAnimation} 2s linear infinite;
   `}
      
+`
+
+export const InfoModal = styled.div`
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #ffb142;
+    display:flex;
+    justify-content: center;
+    transition: 300ms ease;
+    align-items: center;
+    opacity: 0.8;
+    color: white;
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        background: #cc8e35;
+        width:100%;
+        justify-content:center;
+        
+    }
+    p {
+    font:size:2rem;
+    text-align:center;
+    }
+    h2 {
+        display:inline;
+        font-size:3rem;
+    }
+    svg {
+        height:200px;
+        width:200px;
+        fill:white;
+    }
+    @media ${device.tablet} {
+        div {
+            display: flex;
+            flex-direction:row;
+        }
+        span {
+            font-size:3rem;
+            font-weight:bold;
+        }
+        h2 {
+            display:inline;
+            font-size:5rem;
+        }
+        svg {
+            height:200px;
+            width:200px;
+        }
+    }
 `
