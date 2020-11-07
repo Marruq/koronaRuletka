@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/koronaRuletka/static/css/main.920acb8e.chunk.css",
-    "main.js": "/koronaRuletka/static/js/main.542acc68.chunk.js",
-    "main.js.map": "/koronaRuletka/static/js/main.542acc68.chunk.js.map",
+    "main.js": "/koronaRuletka/static/js/main.2612557a.chunk.js",
+    "main.js.map": "/koronaRuletka/static/js/main.2612557a.chunk.js.map",
     "runtime-main.js": "/koronaRuletka/static/js/runtime-main.6e3cf581.js",
     "runtime-main.js.map": "/koronaRuletka/static/js/runtime-main.6e3cf581.js.map",
     "static/js/2.63855dca.chunk.js": "/koronaRuletka/static/js/2.63855dca.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6e3cf581.js",
     "static/js/2.63855dca.chunk.js",
     "static/css/main.920acb8e.chunk.css",
-    "static/js/main.542acc68.chunk.js"
+    "static/js/main.2612557a.chunk.js"
   ]
 }
