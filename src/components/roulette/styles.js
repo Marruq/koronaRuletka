@@ -40,7 +40,7 @@ export const InfoModal = styled.div`
     justify-content: center;
     transition: 300ms ease;
     align-items: center;
-    opacity: 0.8;
+    opacity: 1;
     color: white;
     div {
         display: flex;
@@ -52,7 +52,7 @@ export const InfoModal = styled.div`
         
     }
     p {
-    font:size:2rem;
+    font-size: 3rem;
     text-align:center;
     }
     h2 {
@@ -65,6 +65,7 @@ export const InfoModal = styled.div`
         fill:white;
     }
     @media ${device.tablet} {
+        opacity: 0.8;
         div {
             display: flex;
             flex-direction:row;
