@@ -21,12 +21,11 @@ export const Score = styled.h1`
     margin: 60px 0;
     text-align: center;
     color: ${props => props.result ? "#ffb142" : "white"};
-    
-    ${props => props.result && css`
+  //   ${props => props.result && css`
+  //
+  //   animation: ${resizeAnimation} 2s linear infinite;
+  // `}
 
-    animation: ${resizeAnimation} 2s linear infinite;
-  `}
-     
 `
 
 export const InfoModal = styled.div`
@@ -65,7 +64,7 @@ export const InfoModal = styled.div`
         fill:white;
     }
     @media ${device.tablet} {
-        opacity: 0.8;
+        opacity: 0.9;
         div {
             display: flex;
             flex-direction:row;

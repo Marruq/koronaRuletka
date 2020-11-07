@@ -65,7 +65,7 @@ const Roulette = () => {
                     </div>
                 </InfoModal>
                 }
-               <Score onClick={clipboardHandler} result={result} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
+               <Score onClick={clipboardHandler} result={result} copy={copy} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
 
                 <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>
                 <input type="number" id="max" placeholder="max" onChange={ e => maxHandler(e)}/>

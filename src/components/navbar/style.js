@@ -2,6 +2,7 @@ import styled  from 'styled-components'
 import { device } from '../utilities/device';
 
 export const Nav = styled.nav`
+    left:0;
     bottom:0;
     width:100vw;
     height:5rem;
