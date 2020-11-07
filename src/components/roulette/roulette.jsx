@@ -24,10 +24,18 @@ const Roulette = () => {
         setResult((Math.floor(Math.random() * (max - min + 1)) + min))
     }
 
+    const clipboardHandler = () => {
+        if (result) {
+            navigator.clipboard.writeText(result)
+        } else {
+            console.log('brak wyniku')
+        }
+    }
+
     return (
         <main>
             <div className="roulette">
-               <Score result={result} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
+               <Score onClick={clipboardHandler} result={result} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
 
                 <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>
                 <input type="number" id="max" placeholder="max" onChange={ e => maxHandler(e)}/>

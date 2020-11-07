@@ -1,5 +1,4 @@
 import React from 'react'
-import wirus from '../../images/virus.svg'
 
 const Covid = () => {
 
