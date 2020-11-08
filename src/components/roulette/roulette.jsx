@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { Score, InfoModal } from './styles'
 
+import sound from '../../images/copySound.mp3'
 
 const Roulette = () => {
 
@@ -26,7 +27,12 @@ const Roulette = () => {
     }
 
     const clipboardHandler = () => {
+
+        const song = new Audio();
+        song.src = sound
+
         if (result) {
+            song.play();
             navigator.clipboard.writeText(result)
             setCopy(true)
             setTimeout(()=> {
@@ -41,11 +47,10 @@ const Roulette = () => {
         <main>
 
             <div className="roulette">
-                {copy &&
-                <InfoModal>
+                <InfoModal copy={copy}>
                     <div>
                         <span>
-                            <p>{result}</p>
+                            <p>{result} &#128514;</p>
                             <h2>SKOPIOWANO!</h2>
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -64,7 +69,6 @@ const Roulette = () => {
                         </svg>
                     </div>
                 </InfoModal>
-                }
                <Score onClick={clipboardHandler} result={result} copy={copy} >{result ? result : 'wpisz min, max i kliknij losuj :P'}</Score>
 
                 <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>

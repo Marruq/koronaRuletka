@@ -15,6 +15,16 @@ const resizeAnimation = keyframes`
     }
 `
 
+const copyOpacity = keyframes`
+    0% {
+        opacity: 0; left: -100%;
+    }
+    100% {
+        opacity: 0.9; left: 0;
+    }
+`
+
+
 
 export const Score = styled.h1`
     font-size: ${props => props.result ? "60px" : "30px"};
@@ -31,7 +41,7 @@ export const Score = styled.h1`
 export const InfoModal = styled.div`
     position:absolute;
     top:0;
-    left:0;
+    left:-100%;
     width:100%;
     height:100%;
     background: #ffb142;
@@ -39,8 +49,11 @@ export const InfoModal = styled.div`
     justify-content: center;
     transition: 300ms ease;
     align-items: center;
-    opacity: 1;
+    opacity: 0;
     color: white;
+    ${props => props.copy && css`
+        animation: ${copyOpacity} 100ms ease forwards;
+    `}
     div {
         display: flex;
         align-items: center;
@@ -64,7 +77,6 @@ export const InfoModal = styled.div`
         fill:white;
     }
     @media ${device.tablet} {
-        opacity: 0.9;
         div {
             display: flex;
             flex-direction:row;
