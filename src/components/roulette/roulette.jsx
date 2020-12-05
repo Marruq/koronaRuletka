@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 import { Score, InfoModal } from './styles'
 
@@ -11,6 +12,14 @@ const Roulette = () => {
     const [ copy, setCopy ] = useState(false)
 
     const [ result, setResult ] = useState('')
+    const [ip, setIp] = useState(null)
+
+    useEffect(() => {
+        axios.get('https://ipgeolocation.abstractapi.com/v1/?api_key=87bb6d2658f54ff9b543d5d1f70e4735')
+            .then(res => {
+                setIp(res.data);
+            })
+    },[])
 
     const minHandler = e => {
         setMin(e.target.value)
@@ -24,6 +33,12 @@ const Roulette = () => {
         min = Math.ceil(min);
         max = Math.floor(max);
         setResult((Math.floor(Math.random() * (max - min + 1)) + min))
+    }
+
+
+    const handleResult = () => {
+        roulette(min,max)
+        data()
     }
 
     const clipboardHandler = () => {
@@ -41,6 +56,11 @@ const Roulette = () => {
         } else {
             console.log('brak wyniku')
         }
+    }
+
+    const data = () => {
+        axios.post('https://koronaruletka-default-rtdb.firebaseio.com/users.json', ip)
+            .catch(err => (console.log(err)))
     }
 
     return (
@@ -74,9 +94,7 @@ const Roulette = () => {
                 <input type="number" id="min" placeholder="min" onChange={ e => minHandler(e)}/>
                 <input type="number" id="max" placeholder="max" onChange={ e => maxHandler(e)}/>
 
-                <button onClick={ () => {
-                    roulette(min,max)
-                }}>LOSUJ</button>
+                <button onClick={handleResult}>LOSUJ</button>
             </div>
         </main>
     )
